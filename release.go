@@ -1,16 +1,16 @@
+// Copyright (c) 2014 Andrea Masi. All rights reserved.
+// Use of this source code is governed by a MIT license
+// that can be found in the LICENSE.txt file.
+
 // +build !debug
 
-/*
-	Package stracer is possibly the simplest tracing package.
-	To enable its functions to print just build with ``debug`` tag otherwise they will do noop:
-		go build -tags debug
-	stderr is used to not perturb example functions.
-
-	Credits
-
-	Original idea is by Dave Cheney http://dave.cheney.net.
-
-*/
+// Package stracer is possibly the simplest tracing package.
+// To enable its functions to print just build with ``debug`` tag otherwise they will do noop:
+// 	go build -tags debug
+// stderr is used to not perturb example functions.
+//
+// Credits
+// Original idea is by Dave Cheney http://dave.cheney.net.
 package stracer
 
 // Traceln prints to stderr if '-tags debug'
