@@ -10,6 +10,7 @@
 // stderr is used to not perturb example functions.
 //
 // Credits
+//
 // Original idea is by Dave Cheney http://dave.cheney.net.
 package stracer
 
