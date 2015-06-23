@@ -18,3 +18,7 @@ func Traceln(args ...interface{}) {
 func Tracef(format string, a ...interface{}) {
 	fmt.Fprintf(os.Stderr, format, a...)
 }
+
+func init() {
+	Traceln("Tracing enabled...")
+}
