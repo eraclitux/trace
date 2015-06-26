@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Andrea Masi. All rights reserved.
+// Copyright (c) 2015 Andrea Masi. All rights reserved.
 // Use of this source code is governed by a MIT license
 // that can be found in the LICENSE.txt file.
 
@@ -7,18 +7,20 @@
 package stracer
 
 import (
-	"fmt"
+	"log"
 	"os"
 )
 
+var logger = log.New(os.Stderr, "[STRACER] ", log.Lmicroseconds)
+
 func Traceln(args ...interface{}) {
-	fmt.Fprintln(os.Stderr, args...)
+	logger.Println(args...)
 }
 
-func Tracef(format string, a ...interface{}) {
-	fmt.Fprintf(os.Stderr, format, a...)
+func Tracef(format string, args ...interface{}) {
+	logger.Printf(format, args...)
 }
 
 func init() {
-	Traceln("Tracing enabled...")
+	Traceln("enabled!")
 }
