@@ -1,4 +1,4 @@
-// Copyright (c) 2014 Andrea Masi. All rights reserved.
+// Copyright (c) 2015 Andrea Masi. All rights reserved.
 // Use of this source code is governed by a MIT license
 // that can be found in the LICENSE.txt file.
 
