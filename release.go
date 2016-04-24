@@ -29,3 +29,7 @@ func Traceln(args ...interface{}) {}
 // noop otherwise.
 // stderr is used to not perturb example tests.
 func Tracef(format string, a ...interface{}) {}
+
+// PrettyStruct prints struct in a human readable
+// format to stderr.
+func PrettyStruct(name string, s interface{}) {}

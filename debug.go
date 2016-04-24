@@ -7,6 +7,7 @@
 package stracer
 
 import (
+	"encoding/json"
 	"log"
 	"os"
 )
@@ -19,6 +20,11 @@ func Traceln(args ...interface{}) {
 
 func Tracef(format string, args ...interface{}) {
 	logger.Printf(format, args...)
+}
+
+func PrettyStruct(name string, s interface{}) {
+	b, _ := json.MarshalIndent(s, "", "  ")
+	logger.Println(name, "-", string(b))
 }
 
 func init() {
