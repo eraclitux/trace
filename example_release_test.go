@@ -13,9 +13,9 @@ import (
 func Example() {
 	s := "my-value"
 	fmt.Println("This is printed")
-	stracer.Traceln("This string will be printed to stderr only if '-tags debug' is used when building/running. Value of s:", s)
+	// This will print to stderr only if '-tags debug' is used when building/running
+	stracer.Traceln("Value of s:", s)
 
 	// Output:
 	//This is printed
-
 }

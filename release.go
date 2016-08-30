@@ -5,10 +5,13 @@
 // +build !debug
 
 // Package stracer is possibly the simplest tracing package.
-// The idea is that during early stages of code development one wants
-// an easy way to inspect values of vars that can be quickly disabled.
 //
-// To enable stracer functions to print just build, run or test with ``debug`` tag otherwise they will do noop:
+// The idea is that during early stages of code development one wants
+// a simple (and dirty :)) way to inspect values of vars
+// that can be quickly disabled.
+//
+// To enable stracer functions to print, just build, run or test with ``debug``
+// tag otherwise they will be noops:
 // 	go build -tags debug
 // 	go test -tags debug
 // 	go run -tags debug main.go
