@@ -4,13 +4,13 @@
 
 // +build !debug
 
-// Package stracer is possibly the simplest tracing package.
+// Package trace is a simple tracing package.
 //
 // The idea is that during early stages of code development one wants
 // a simple (and dirty :)) way to inspect values of vars
 // that can be quickly disabled.
 //
-// To enable stracer functions to print, just build, run or test with ``debug``
+// To enable trace functions to print, just build, run or test with ``debug``
 // tag otherwise they will be noops:
 // 	go build -tags debug
 // 	go test -tags debug
@@ -19,8 +19,8 @@
 //
 // Credits
 //
-// Original idea is by Dave Cheney http://dave.cheney.net.
-package stracer
+// Original idea by Dave Cheney http://dave.cheney.net.
+package trace
 
 // Traceln prints to stderr if '-tags debug'
 // is used when building/running, noop otherwise.

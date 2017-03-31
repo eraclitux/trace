@@ -4,7 +4,7 @@
 
 // +build debug
 
-package stracer
+package trace
 
 import (
 	"encoding/json"
@@ -12,7 +12,7 @@ import (
 	"os"
 )
 
-var logger = log.New(os.Stderr, "[STRACER] ", log.Lmicroseconds)
+var logger = log.New(os.Stderr, "[TRACE] ", log.Lmicroseconds)
 
 func Traceln(args ...interface{}) {
 	logger.Println(args...)
@@ -23,6 +23,7 @@ func Tracef(format string, args ...interface{}) {
 }
 
 func PrettyStruct(name string, s interface{}) {
+	// TODO use reflection to get the name and remove arg?
 	b, _ := json.MarshalIndent(s, "", "  ")
 	logger.Println(name, "-", string(b))
 }
