@@ -14,7 +14,7 @@ func Example() {
 	s := "my-value"
 	fmt.Println("This is printed")
 	// This will print to stderr only if '-tags debug' is used when building/running
-	trace.Traceln("Value of s:", s)
+	trace.Println("Value of s:", s)
 
 	// Output:
 	//This is printed

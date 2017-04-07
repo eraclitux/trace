@@ -14,20 +14,21 @@ import (
 
 var logger = log.New(os.Stderr, "[TRACE] ", log.Lmicroseconds)
 
-func Traceln(args ...interface{}) {
-	logger.Println(args...)
+func Println(a ...interface{}) {
+	logger.Println(a...)
 }
 
-func Tracef(format string, args ...interface{}) {
-	logger.Printf(format, args...)
+func Printf(format string, a ...interface{}) {
+	logger.Printf(format, a...)
 }
 
-func PrettyStruct(name string, s interface{}) {
+func PrettyPrint(name string, s interface{}) {
 	// TODO use reflection to get the name and remove arg?
+	// FIXME the error!
 	b, _ := json.MarshalIndent(s, "", "  ")
 	logger.Println(name, "-", string(b))
 }
 
 func init() {
-	Traceln("enabled!")
+	Println("enabled!")
 }

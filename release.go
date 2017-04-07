@@ -22,17 +22,17 @@
 // Original idea by Dave Cheney http://dave.cheney.net.
 package trace
 
-// Traceln prints to stderr if '-tags debug'
+// Println prints to stderr if '-tags debug'
 // is used when building/running, noop otherwise.
 // stderr is used to not perturb example tests.
-func Traceln(args ...interface{}) {}
+func Println(args ...interface{}) {}
 
-// Tracef prints to stderr using supplied format
+// Printf prints to stderr using supplied format
 // if '-tags debug' is used when building/running,
-// noop otherwise.
+// otherwise it is a no-op.
 // stderr is used to not perturb example tests.
-func Tracef(format string, a ...interface{}) {}
+func Printf(format string, a ...interface{}) {}
 
-// PrettyStruct prints struct in a human readable
+// PrettyPrint prints struct in a human readable
 // format to stderr.
-func PrettyStruct(name string, s interface{}) {}
+func PrettyPrint(name string, s interface{}) {}
