@@ -33,6 +33,6 @@ func Println(args ...interface{}) {}
 // stderr is used to not perturb example tests.
 func Printf(format string, a ...interface{}) {}
 
-// PrettyPrint prints struct in a human readable
+// PrettyPrint prints types in a human readable
 // format to stderr.
 func PrettyPrint(name string, s interface{}) {}

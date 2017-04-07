@@ -24,8 +24,11 @@ func Printf(format string, a ...interface{}) {
 
 func PrettyPrint(name string, s interface{}) {
 	// TODO use reflection to get the name and remove arg?
-	// FIXME the error!
-	b, _ := json.MarshalIndent(s, "", "  ")
+	b, err := json.MarshalIndent(s, "", "  ")
+	if err != nil {
+		logger.Printf("error printing %q", name)
+		return
+	}
 	logger.Println(name, "-", string(b))
 }
 
