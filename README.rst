@@ -7,9 +7,14 @@ trace
 .. |image0| image:: https://godoc.org/github.com/eraclitux/trace?status.svg
 .. _image0: https://godoc.org/github.com/eraclitux/trace
 
-Package ``trace`` is a simple tracing package. To enable its functions to print just build with ``debug`` tag otherwise they will do noop::
+Package ``trace`` is a simple tracing package. See `godoc <https://godoc.org/github.com/eraclitux/trace>`_ for usage examples.
 
-        go build -tags debug
+Installation
+============
+
+To install with the ``trace-clean`` command::
+
+        $ go get github.com/eraclitux/trace/...
 
 Credits
 =======

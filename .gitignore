@@ -1,1 +1,3 @@
 *.swp
+trace-clean
+!trace-clean/

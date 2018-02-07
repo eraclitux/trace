@@ -4,7 +4,7 @@
 
 // +build !debug
 
-// Package trace is a simple tracing package.
+// Package trace exposes simple tracing capabilities.
 //
 // The idea is that during early stages of code development one wants
 // a simple (and dirty :)) way to inspect values of vars
@@ -16,6 +16,13 @@
 // 	go test -tags debug
 // 	go run -tags debug main.go
 // stderr is used to not perturb Examples() functions.
+//
+// Once trace is no more needed, the provided command
+// can be used to remove its presence in a code base,
+// for example:
+//	trace-clean -r .
+// will recursively remove import and function calls from
+// all go files in the current directory and all its subdirs.
 //
 // Credits
 //
