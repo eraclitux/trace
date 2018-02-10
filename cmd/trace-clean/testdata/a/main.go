@@ -6,7 +6,11 @@ import (
 	"github.com/eraclitux/trace"
 )
 
+type dummy struct {
+	Name string
+}
+
 func main() {
 	fmt.Println("printed")
-	trace.Println("not printed")
+	trace.PrettyPrint("dummy:", dummy{"John"})
 }
