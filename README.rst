@@ -2,13 +2,16 @@
 trace
 =====
 
-|image0|_ |image1|_
+|image0|_ |image1|_ |image2|_
 
 .. |image0| image:: https://godoc.org/github.com/eraclitux/trace?status.svg
 .. _image0: https://godoc.org/github.com/eraclitux/trace
 
 .. |image1| image:: https://travis-ci.org/eraclitux/trace.svg?branch=master
 .. _image1: https://travis-ci.org/eraclitux/trace
+
+.. |image2| image:: https://goreportcard.com/badge/github.com/eraclitux/trace
+.. _image2: https://goreportcard.com/report/github.com/eraclitux/trace
 
 Package ``trace`` is a simple tracing package. See `godoc <https://godoc.org/github.com/eraclitux/trace>`_ for usage examples.
 
